@@ -44,15 +44,16 @@ const metadataTitle = archive ? `${page.title} — Archivo — La Osa Polar` : `
   .contact-panel h2 { margin-bottom: var(--space-6); }
   .status { border-left: 2px solid var(--accent); padding-left: var(--space-5); }
   .gallery .article-grid { display: block; }
-  .gallery .original-content { max-width: none; columns: 3 280px; column-gap: var(--space-6); }
-  .gallery .original-content :global(figure) { break-inside: avoid; display: inline-block; width: 100%; margin: 0 0 var(--space-6); }
-  .gallery .original-content :global(p) { break-after: avoid; color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-  .gallery .original-content :global(h2), .gallery .original-content :global(h3) { break-after: avoid; margin-top: 0; font-size: 1.25rem; }
+  .gallery .original-content { max-width: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-6); align-items: start; }
+  .gallery .original-content :global(figure) { width: 100%; margin: 0; }
+  .gallery .original-content :global(p) { grid-column: 1 / -1; color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .gallery .original-content :global(h2), .gallery .original-content :global(h3) { grid-column: 1 / -1; margin-top: 0; font-size: 1.25rem; }
   .gallery .original-content :global(img) { max-height: none; aspect-ratio: 4 / 3; object-fit: cover; }
   .profile .article-grid { display: block; }
   .profile .original-content { margin-inline: auto; }
   .profile .original-content :global(figure:first-child) { max-width: 520px; margin-inline: auto; }
   .profile .original-content :global(p) { max-width: 68ch; margin-inline: auto; }
   @media (max-width: 850px) { .article-grid { grid-template-columns: 1fr; } .contact-panel { position: static; } }
-  @media (max-width: 520px) { .original-content { font-size: 1rem; } .gallery .original-content { columns: 1; } }
+  @media (max-width: 850px) { .gallery .original-content { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .original-content { font-size: 1rem; } .gallery .original-content { grid-template-columns: 1fr; } }
 </style>

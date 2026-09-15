@@ -27,7 +27,7 @@ for (const page of inventory.filter(p=>!['eventos','educacion-emocional-sanitari
 }
 assert.ok(!source.includes('wp-content'));
 for (const page of migrated) {
-  const original = inventory.find(item => item.file === page.slug)?.text.replace(/\s/g, '') || '';
+  const original = inventory.find(item => item.file === page.slug)?.text.replace(/oplus_\d+/gi, '').replace(/\s/g, '') || '';
   const retained = page.html.replace(/<[^>]+>/g, '').replace(/&\w+;|\s/g, '');
   assert.ok(!original.length || retained.length / original.length >= .9, `${page.slug}: posible pérdida de contenido indexable`);
 }

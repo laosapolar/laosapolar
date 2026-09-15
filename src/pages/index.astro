@@ -106,6 +106,29 @@ const proposals = [
   </section>
 </Layout>
 
+<script is:inline>
+  const query = new URLSearchParams(location.search);
+  const legacyPages = {
+    58: '/arteterapia-esencial/', 60: '/espacio-individual/', 73: '/especializacion/',
+    76: '/arteterapia-gestalt/', 78: '/educacion-emocional-sanitaria/', 80: '/ciclo-esencial-2024/',
+    84: '/eventos/', 86: '/monograficos/', 216: '/nosotras/', 218: '/la-osa-polar/',
+    220: '/colaboraciones/', 381: '/ejemplo-colaborador/', 430: '/arteterapia-gestalt/',
+    482: '/informacion-postgrado/', 525: '/galeria/', 588: '/rocio/', 600: '/catalina-llado/',
+    604: '/consuelo-trujillo/', 608: '/victor-orive/', 612: '/alain-vigneau/', 616: '/victor-rios/',
+    620: '/antonio-castillo-2/', 624: '/lolique-llorente/', 629: '/amos-vasquez/',
+    633: '/raquel-jimenez/', 637: '/ana/', 643: '/jorge-gregorio/', 647: '/amaia-roldan/',
+    651: '/oscar-velado/', 655: '/marisol-molina/', 659: '/inaki-zapirain/',
+    663: '/montse-perez/', 667: '/elena-curiel/', 671: '/maria-silva/',
+    675: '/guillermo-urbano/', 680: '/magda-pineyro/', 684: '/simon-castillo/',
+    688: '/antonio-castillo-2/', 693: '/elena-garcia/', 908: '/artistas-vida-y-obras/',
+    1008: '/alejandro-rodriguez/'
+  };
+  const search = query.get('s');
+  const legacyPath = legacyPages[query.get('page_id')];
+  if (search !== null) location.replace(`/buscar/?s=${encodeURIComponent(search)}`);
+  else if (legacyPath) location.replace(legacyPath);
+</script>
+
 <style>
   .home-cover { display: grid; grid-template-columns: 1fr 1.12fr; max-width: 1800px; margin-inline: auto; }
   .cover-copy { padding: clamp(3rem, 6vw, 6rem) var(--gutter); align-self: center; }

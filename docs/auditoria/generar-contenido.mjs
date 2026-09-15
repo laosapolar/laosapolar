@@ -36,10 +36,10 @@ for (const [url, file] of assetMap) {
 const esc = value => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const attrs = node => Object.fromEntries((node.attrs || []).map(a => [a.name, a.value]));
 const allowed = new Set(['p','h2','h3','h4','ul','ol','li','strong','em','blockquote','figure','figcaption','a','br','img']);
-const render = node => {
+const render = (node, parentTag = '') => {
   if (node.nodeName === '#text') return esc(node.value);
   if (['script','style','form','noscript'].includes(node.tagName)) return '';
-  const inner = (node.childNodes || []).map(render).join('');
+  const inner = (node.childNodes || []).map(child => render(child, node.tagName || parentTag)).join('');
   if (!allowed.has(node.tagName)) return inner;
   const a = attrs(node);
   if (node.tagName === 'img') {
@@ -56,6 +56,9 @@ const render = node => {
     return `<a href="${esc(href)}">${inner}</a>`;
   }
   if (node.tagName === 'br') return '<br>';
+  // WordPress galleries sometimes wrap a figure in another figure. Keep one
+  // semantic container so the generated HTML remains valid.
+  if (node.tagName === 'figure' && parentTag === 'figure') return inner;
   return `<${node.tagName}>${inner}</${node.tagName}>`;
 };
 const pages = [];
@@ -65,13 +68,32 @@ const descriptions = {
   eventos: 'Información sobre eventos de La Osa Polar.',
   'educacion-emocional-sanitaria': 'Educación Emocional Sanitaria en La Osa Polar.',
 };
+const splitMultiImageFigures = html => html.replace(/<figure>([\s\S]*?)<\/figure>/g, (figure, inner) => {
+  const images = inner.match(/<img\b[^>]*>(?:\s*<figcaption>[\s\S]*?<\/figcaption>)?/g) || [];
+  return images.length > 1 ? images.map(image => `<figure>${image}</figure>`).join('') : figure;
+});
 for (const page of inventory) {
   const doc = parse(fs.readFileSync(`docs/auditoria/original/${page.file}.html`, 'utf8'));
   let content;
   const find = node => { if ((attrs(node).class || '').split(' ').includes('entry-content')) content = node; for (const child of node.childNodes || []) find(child); };
   find(doc);
   let html = (content?.childNodes || []).map(render).join('').replace(/<p>\s*<\/p>/g, '');
-  if (page.file === 'colaboraciones') html = html.replaceAll('<h3>', '<h2>').replaceAll('</h3>', '</h2>');
+  html = splitMultiImageFigures(html)
+    .replace(/<figcaption>\s*oplus_\d+\s*<\/figcaption>/gi, '')
+    .replace(/<figure>\s*<\/figure>/g, '')
+    .replace('<p><a href="https://www.google.es/">Leer más</a></p>', '')
+    .replaceAll('https://www.aab.es/publicaciones/bolet%C3%ADn-aab/bolet%C3%ADn-106', 'https://aab.es/aab-boletin-106/')
+    .replaceAll('http://www.plenainclusioncanarias.org/www2/sites/plenainclusioncanarias.org/files/guia_gordofobia-_lectura_facil_0.pdf', 'https://www.gobiernodecanarias.org/igualdad/documentos/publicaciones/gordofobia_lectura_facil_20012022.pdf')
+    .replaceAll('https://tienda.pikaramagazine.com/home/128-feminismos-miradas-desde-la-diversidad.html', 'https://www.pikaramagazine.com/2022/12/es-tiempo-de-primas/')
+    .replaceAll('http://www.marisolmolina.es/', 'https://www.marisolmolina.es/');
+  html = html.replace(/<figure>\s*<a href="([^"]+)">\s*(<img\b[^>]*>)\s*<\/a>\s*<figcaption>([\s\S]*?)<\/figcaption>\s*<\/figure>/g,
+    '<figure><a href="$1">$2<figcaption>$3</figcaption></a></figure>');
+  if (page.file === 'galeria') html = html.replaceAll('alt=""', 'alt="Imagen de la galería de La Osa Polar"');
+  if (page.file === 'colaboraciones') {
+    html = html.replaceAll('<h3>', '<h2>').replaceAll('</h3>', '</h2>');
+    html = html.replace(/<figure>\s*<a href="([^"]+)">\s*(<img\b[^>]*>)\s*<\/a>\s*<\/figure>\s*<h2>([^<]+)<\/h2>/g,
+      '<figure><a href="$1">$2<figcaption>$3</figcaption></a></figure>');
+  }
   const summary = page.text.replace(/\s+/g, ' ').trim();
   const clipped = summary.length > 155 ? `${summary.slice(0, 152).replace(/\s+\S*$/, '')}…` : summary;
   pages.push({
