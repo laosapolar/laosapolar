@@ -10,8 +10,9 @@ const contact = ['arteterapia-esencial','ciclo-esencial-2024','arteterapia-gesta
 const gallery = ['galeria','artistas-vida-y-obras','colaboraciones'].includes(page.slug);
 const profile = !gallery && page.imageCount <= 2 && !contact && !['nosotras','la-osa-polar'].includes(page.slug);
 const description = page.description || `${page.title}, La Osa Polar.`;
+const metadataTitle = archive ? `${page.title} — Archivo — La Osa Polar` : `${page.title} — La Osa Polar`;
 ---
-<Layout title={`${page.title} — La Osa Polar`} {description} noindex={empty}>
+<Layout title={metadataTitle} {description} noindex={empty}>
   {archive && <div class="archive-banner"><div class="container">Convocatoria anterior conservada como archivo. Consulta la edición vigente o escríbenos para conocer próximas fechas.</div></div>}
   <PageHero title={page.title} {archive} />
   <article class:list={['editorial section', { gallery, profile, empty }]}>
@@ -46,6 +47,7 @@ const description = page.description || `${page.title}, La Osa Polar.`;
   .gallery .original-content { max-width: none; columns: 3 280px; column-gap: var(--space-6); }
   .gallery .original-content :global(figure) { break-inside: avoid; display: inline-block; width: 100%; margin: 0 0 var(--space-6); }
   .gallery .original-content :global(p) { break-after: avoid; color: var(--accent); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .gallery .original-content :global(h2), .gallery .original-content :global(h3) { break-after: avoid; margin-top: 0; font-size: 1.25rem; }
   .gallery .original-content :global(img) { max-height: none; aspect-ratio: 4 / 3; object-fit: cover; }
   .profile .article-grid { display: block; }
   .profile .original-content { margin-inline: auto; }

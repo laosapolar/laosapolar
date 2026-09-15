@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { parse } from 'parse5';
 
 const inventory = JSON.parse(fs.readFileSync('docs/auditoria/inventario.json', 'utf8')).filter(p => !p.file.startsWith('page-'));
+const migrated = JSON.parse(fs.readFileSync('src/data/migrated-pages.json', 'utf8'));
 const redirects = new Set(['formacion-1', 'antonio-castillo']);
 const failures = [];
 const attr = (node, name) => node.attrs?.find(a => a.name === name)?.value;
@@ -25,4 +26,9 @@ for (const page of inventory.filter(p=>!['eventos','educacion-emocional-sanitari
   const path=page.file==='inicio'?'':`${page.file}/`; assert.ok(source.includes(`https://laosapolar.es/${path}`), `Sitemap sin ${page.file}`);
 }
 assert.ok(!source.includes('wp-content'));
+for (const page of migrated) {
+  const original = inventory.find(item => item.file === page.slug)?.text.replace(/\s/g, '') || '';
+  const retained = page.html.replace(/<[^>]+>/g, '').replace(/&\w+;|\s/g, '');
+  assert.ok(!original.length || retained.length / original.length >= .9, `${page.slug}: posible pérdida de contenido indexable`);
+}
 console.log(`Migración verificada: ${inventory.length} URLs originales cubiertas, recursos locales y sitemap compatible.`);

@@ -1,9 +1,9 @@
 ---
 import { Image } from 'astro:assets';
-import logo from '../assets/home/logoFull.png';
+import logo from '../assets/home/logoMark.png';
 ---
 <a class="brand" href="/" aria-label="La Osa Polar — Inicio">
-  <Image src={logo} alt="" widths={[270, 540]} sizes="270px" class="brand-mark" loading="eager" />
+  <Image src={logo} alt="" widths={[44, 54, 88, 108]} sizes="(max-width: 600px) 44px, 54px" class="brand-mark" loading="eager" />
   <span>La Osa Polar</span>
 </a>
 <style>

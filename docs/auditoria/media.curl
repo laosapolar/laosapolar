@@ -1,419 +1,380 @@
-url = "https://laosapolar.es/wp-content/uploads/2024/10/cropped-12-scaled-2-scaled.jpg"
-output = "public/media/original/305a8da1447b.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2023/11/Principal-o-fondos-web-3.jpg"
-output = "public/media/original/1bf3e6177b4d.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_001803.jpg"
-output = "public/media/original/c7984c374cf1.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231023_173158.jpg"
-output = "public/media/original/43e506d55bf9.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231023_172917.jpg"
-output = "public/media/original/4eb3c7433182.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20241010_022320.jpg"
-output = "public/media/original/b45742c80033.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003411.jpg"
-output = "public/media/original/5621a68f7f86.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003537.jpg"
-output = "public/media/original/984d08575e47.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003727.jpg"
-output = "public/media/original/805f15d8d6ef.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003923.jpg"
-output = "public/media/original/368cf47e88b5.jpg"
-
-url = "https://laosapolar.es/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg"
-output = "public/media/original/2225750b484e.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/30-1024x681.jpg"
-output = "public/media/original/1b710ebb57f6.jpg"
-
-url = "https://laosapolar.es/wp-content/uploads/2024/10/10-1024x681.jpg"
-output = "public/media/original/32d58843359c.jpg"
-
 url = "https://laosapolar.es/wp-content/uploads/2024/10/colors-3185020_1920-1024x683.jpg"
-output = "public/media/original/77996cfc98ce.jpg"
+output = "docs/auditoria/media-original/77996cfc98ce.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/para-usar-sin-ubicar-6.jpg"
-output = "public/media/original/4041b7fc5aad.jpg"
+output = "docs/auditoria/media-original/4041b7fc5aad.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/abstract-3880131_1920-1024x683.jpg"
-output = "public/media/original/06d0f27f66b8.jpg"
+output = "docs/auditoria/media-original/06d0f27f66b8.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20240104_125728-1.jpg"
-output = "public/media/original/a5646b5effb3.jpg"
+output = "docs/auditoria/media-original/a5646b5effb3.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/6.-voa-Mulhacen-1-1024x667.jpg"
-output = "public/media/original/cd5b74bf9a45.jpg"
+output = "docs/auditoria/media-original/cd5b74bf9a45.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20240104_082259-2.jpg"
-output = "public/media/original/34940f21f53d.jpg"
+output = "docs/auditoria/media-original/34940f21f53d.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20240104_082312-1-768x1024.jpg"
-output = "public/media/original/ebc19e90c8cf.jpg"
+output = "docs/auditoria/media-original/ebc19e90c8cf.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20230926_021308-2-995x1024.jpg"
-output = "public/media/original/db2f565f4161.jpg"
+output = "docs/auditoria/media-original/db2f565f4161.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2026/06/47312-819x1024.jpg"
-output = "public/media/original/6c58642e95da.jpg"
+output = "docs/auditoria/media-original/6c58642e95da.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/1000175125-1024x1024.jpg"
-output = "public/media/original/70b65d77024f.jpg"
+output = "docs/auditoria/media-original/70b65d77024f.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/1000175140-1024x1024.jpg"
-output = "public/media/original/a358f7b08d30.jpg"
+output = "docs/auditoria/media-original/a358f7b08d30.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/1000175128-1024x1024.jpg"
-output = "public/media/original/4dcbb0136528.jpg"
+output = "docs/auditoria/media-original/4dcbb0136528.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/1000175137-1024x1024.jpg"
-output = "public/media/original/f56a7538ad3d.jpg"
+output = "docs/auditoria/media-original/f56a7538ad3d.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/1000175131-1024x1024.jpg"
-output = "public/media/original/b315b71445e6.jpg"
+output = "docs/auditoria/media-original/b315b71445e6.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/1000175134-1024x1024.jpg"
-output = "public/media/original/677209b36836.jpg"
+output = "docs/auditoria/media-original/677209b36836.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/1000175143-1024x1024.jpg"
-output = "public/media/original/06138896e6fd.jpg"
+output = "docs/auditoria/media-original/06138896e6fd.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/IMG-20240414-WA0048-1024x768.jpg"
-output = "public/media/original/ad795a6f1e7a.jpg"
+output = "docs/auditoria/media-original/ad795a6f1e7a.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/IMG-20240415-WA0054-1024x768.jpg"
-output = "public/media/original/ba75df175d65.jpg"
+output = "docs/auditoria/media-original/ba75df175d65.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/IMG-20240310-WA0011-768x1024.jpg"
-output = "public/media/original/3d3ddb450f06.jpg"
+output = "docs/auditoria/media-original/3d3ddb450f06.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/IMG-20240414-WA0034-1024x768.jpg"
-output = "public/media/original/9590b8da65b8.jpg"
+output = "docs/auditoria/media-original/9590b8da65b8.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2025/07/IMG-20250615-WA0008-1024x768.jpg"
-output = "public/media/original/8d1625cbe56e.jpg"
+output = "docs/auditoria/media-original/8d1625cbe56e.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2025/07/IMG-20250527-WA0096-768x1024.jpg"
-output = "public/media/original/2270f142b370.jpg"
+output = "docs/auditoria/media-original/2270f142b370.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2025/07/IMG-20250323-WA0016-1024x768.jpg"
-output = "public/media/original/8baef5bbdbfc.jpg"
+output = "docs/auditoria/media-original/8baef5bbdbfc.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2025/07/IMG-20250527-WA0063-1024x1024.jpg"
-output = "public/media/original/084e93a75cd1.jpg"
+output = "docs/auditoria/media-original/084e93a75cd1.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2025/07/IMG-20250323-WA0060-1024x768.jpg"
-output = "public/media/original/9f93aa5e4c52.jpg"
+output = "docs/auditoria/media-original/9f93aa5e4c52.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG20240309185317-1024x768.jpg"
-output = "public/media/original/524383c1ef2d.jpg"
+output = "docs/auditoria/media-original/524383c1ef2d.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/15-1024x681.jpg"
-output = "public/media/original/62dfc24fe4c3.jpg"
+output = "docs/auditoria/media-original/62dfc24fe4c3.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/4-3-scaled.jpg"
-output = "public/media/original/cc27f77f57aa.jpg"
+output = "docs/auditoria/media-original/cc27f77f57aa.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/2-5-scaled.jpg"
-output = "public/media/original/ad963315ea65.jpg"
+output = "docs/auditoria/media-original/ad963315ea65.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2023/11/Logo.png"
-output = "public/media/original/4eed2f49ada0.png"
+output = "docs/auditoria/media-original/4eed2f49ada0.png"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20240129_003711-1024x768.jpg"
-output = "public/media/original/ca46ef3b66a4.jpg"
+output = "docs/auditoria/media-original/ca46ef3b66a4.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/natalia.jpg"
-output = "public/media/original/74ef08565b0d.jpg"
+output = "docs/auditoria/media-original/74ef08565b0d.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-ROCIO-1.jpg"
-output = "public/media/original/1e684086beae.jpg"
+output = "docs/auditoria/media-original/1e684086beae.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/FOTO-CATALINA-LLADO.jpeg"
-output = "public/media/original/60eb75366f26.jpeg"
+output = "docs/auditoria/media-original/60eb75366f26.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/consuelo-edited-2.jpg"
-output = "public/media/original/c7c16235c9cc.jpg"
+output = "docs/auditoria/media-original/c7c16235c9cc.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-VICTOR-ORIVE-edited-1.jpg"
-output = "public/media/original/4ef897bb043b.jpg"
+output = "docs/auditoria/media-original/4ef897bb043b.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/foto-Alain-Vigneau-scaled.jpg"
-output = "public/media/original/c1483063cd92.jpg"
+output = "docs/auditoria/media-original/c1483063cd92.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-VICTOR-RIOS-edited-1.jpg"
-output = "public/media/original/c05333ea795f.jpg"
+output = "docs/auditoria/media-original/c05333ea795f.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/antonio.jpg"
-output = "public/media/original/3a5957ff3be5.jpg"
+output = "docs/auditoria/media-original/3a5957ff3be5.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-LOLIQUE-edited-1.jpg"
-output = "public/media/original/c1153fef0e95.jpg"
+output = "docs/auditoria/media-original/c1153fef0e95.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FotoAmos-edited.jpg"
-output = "public/media/original/25c2eeb119fa.jpg"
+output = "docs/auditoria/media-original/25c2eeb119fa.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-RAQUEL-JIMENEZ-edited-2.jpg"
-output = "public/media/original/d16551e654fc.jpg"
+output = "docs/auditoria/media-original/d16551e654fc.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/ana_jimenez.jpg"
-output = "public/media/original/1d800fee170e.jpg"
+output = "docs/auditoria/media-original/1d800fee170e.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-JORGE-GREGORIO-edited.jpg"
-output = "public/media/original/9a5876b6d428.jpg"
+output = "docs/auditoria/media-original/9a5876b6d428.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Foto-Amaia-rOLDAN-edited-2.jpeg"
-output = "public/media/original/ddbb8b61a925.jpeg"
+output = "docs/auditoria/media-original/ddbb8b61a925.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-OSCAR-VELADO-edited-1.jpeg"
-output = "public/media/original/13c144ff36e6.jpeg"
+output = "docs/auditoria/media-original/13c144ff36e6.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/marisol-scaled.jpg"
-output = "public/media/original/a28fccafda2a.jpg"
+output = "docs/auditoria/media-original/a28fccafda2a.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/foto-inaki-edited.jpg"
-output = "public/media/original/b1d576b9a9a7.jpg"
+output = "docs/auditoria/media-original/b1d576b9a9a7.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/FOTO-MONTSE-PEREZ-CRISTOBAL.jpg"
-output = "public/media/original/951648c83eba.jpg"
+output = "docs/auditoria/media-original/951648c83eba.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-ELENA-CURIEL-edited-6.jpg"
-output = "public/media/original/dc45e52c1a07.jpg"
+output = "docs/auditoria/media-original/dc45e52c1a07.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/FOTO-MARIA-SILVA.jpg"
-output = "public/media/original/ed5e78500730.jpg"
+output = "docs/auditoria/media-original/ed5e78500730.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-GUILLERMO-URBANO.png"
-output = "public/media/original/ca68cedf2703.png"
+output = "docs/auditoria/media-original/ca68cedf2703.png"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-MAGDA-PINEYRO-edited-scaled.jpg"
-output = "public/media/original/3444a31a06b5.jpg"
+output = "docs/auditoria/media-original/3444a31a06b5.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/FOTO-SIMON-CASTILLO-edited-1.jpeg"
-output = "public/media/original/799e548ae0bb.jpeg"
+output = "docs/auditoria/media-original/799e548ae0bb.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/foto-arteterapeuta-Elena-Ferrandez-edited.jpg"
-output = "public/media/original/55894acf9159.jpg"
+output = "docs/auditoria/media-original/55894acf9159.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2025/02/IMG_20250213_133811.jpg"
-output = "public/media/original/8103f160e2be.jpg"
+output = "docs/auditoria/media-original/8103f160e2be.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/natalia-1.jpg"
-output = "public/media/original/a659c9061649.jpg"
+output = "docs/auditoria/media-original/a659c9061649.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2023/11/apartado-Monograficos.jpg"
-output = "public/media/original/3d2fd25e7e2a.jpg"
+output = "docs/auditoria/media-original/3d2fd25e7e2a.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/IMG-20240415-WA0048-1024x576.jpg"
-output = "public/media/original/acf4777934b7.jpg"
+output = "docs/auditoria/media-original/acf4777934b7.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/IMG-20240414-WA0064-768x1024.jpg"
-output = "public/media/original/05c7b3cffe84.jpg"
+output = "docs/auditoria/media-original/05c7b3cffe84.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/05/IMG-20240415-WA0112-766x1024.jpg"
-output = "public/media/original/feb384d220e6.jpg"
+output = "docs/auditoria/media-original/feb384d220e6.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20240126_004549-1-1024x485.jpg"
-output = "public/media/original/77e45d2c808e.jpg"
+output = "docs/auditoria/media-original/77e45d2c808e.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20240214_131837-1-1024x881.jpg"
-output = "public/media/original/b7e1f30645de.jpg"
+output = "docs/auditoria/media-original/b7e1f30645de.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20240310_161738-1-768x1024.jpg"
-output = "public/media/original/bcf533f16d6c.jpg"
+output = "docs/auditoria/media-original/bcf533f16d6c.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-ROCIO-2-edited.jpg"
-output = "public/media/original/1e5fd6c12096.jpg"
+output = "docs/auditoria/media-original/1e5fd6c12096.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-CATALINA-LLADO-edited.jpeg"
-output = "public/media/original/24370920d423.jpeg"
+output = "docs/auditoria/media-original/24370920d423.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/consuelo-1-edited.jpg"
-output = "public/media/original/43d602215a59.jpg"
+output = "docs/auditoria/media-original/43d602215a59.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-VICTOR-ORIVE-edited.jpg"
-output = "public/media/original/372ea5d22748.jpg"
+output = "docs/auditoria/media-original/372ea5d22748.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/foto-Alain-Vigneau-edited-scaled.jpg"
-output = "public/media/original/95db2c1725ad.jpg"
+output = "docs/auditoria/media-original/95db2c1725ad.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-VICTOR-RIOS-1-edited.jpg"
-output = "public/media/original/2ee762111ca7.jpg"
+output = "docs/auditoria/media-original/2ee762111ca7.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/antonio-1-edited.jpg"
-output = "public/media/original/96fdf6a4ee53.jpg"
+output = "docs/auditoria/media-original/96fdf6a4ee53.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-LOLIQUE-1-edited.jpg"
-output = "public/media/original/d75ca53202fd.jpg"
+output = "docs/auditoria/media-original/d75ca53202fd.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FotoAmos-1-edited.jpg"
-output = "public/media/original/acfa92f7c23c.jpg"
+output = "docs/auditoria/media-original/acfa92f7c23c.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-RAQUEL-JIMENEZ-edited.jpg"
-output = "public/media/original/fdf20b6b4b5e.jpg"
+output = "docs/auditoria/media-original/fdf20b6b4b5e.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/ana_jimenez-2.jpg"
-output = "public/media/original/696651a5dcec.jpg"
+output = "docs/auditoria/media-original/696651a5dcec.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-JORGE-GREGORIO-edited-1.jpg"
-output = "public/media/original/b757dacaa3b3.jpg"
+output = "docs/auditoria/media-original/b757dacaa3b3.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/Foto-Amaia-rOLDAN-edited.jpeg"
-output = "public/media/original/2d695fd4e8f4.jpeg"
+output = "docs/auditoria/media-original/2d695fd4e8f4.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-OSCAR-VELADO-edited.jpeg"
-output = "public/media/original/158916183c4e.jpeg"
+output = "docs/auditoria/media-original/158916183c4e.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/marisol-1-edited.jpg"
-output = "public/media/original/20bd5f1cee51.jpg"
+output = "docs/auditoria/media-original/20bd5f1cee51.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/foto-inaki-1-edited.jpg"
-output = "public/media/original/64058a981912.jpg"
+output = "docs/auditoria/media-original/64058a981912.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-MONTSE-PEREZ-CRISTOBAL-edited.jpg"
-output = "public/media/original/9562644fab52.jpg"
+output = "docs/auditoria/media-original/9562644fab52.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-ELENA-CURIEL-1-edited.jpg"
-output = "public/media/original/b633b4e5f075.jpg"
+output = "docs/auditoria/media-original/b633b4e5f075.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-MARIA-SILVA-edited.jpg"
-output = "public/media/original/cfd147b8570b.jpg"
+output = "docs/auditoria/media-original/cfd147b8570b.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-GUILLERMO-URBANO-2-edited.png"
-output = "public/media/original/f679ce71a69a.png"
+output = "docs/auditoria/media-original/f679ce71a69a.png"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-MAGDA-PINEYRO-edited-scaled.jpg"
-output = "public/media/original/aa68930a33e3.jpg"
+output = "docs/auditoria/media-original/aa68930a33e3.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/FOTO-SIMON-CASTILLO-edited.jpeg"
-output = "public/media/original/3669860a4843.jpeg"
+output = "docs/auditoria/media-original/3669860a4843.jpeg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/antonio-1.jpg"
-output = "public/media/original/6cf8e3a11625.jpg"
+output = "docs/auditoria/media-original/6cf8e3a11625.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/09/foto-arteterapeuta-Elena-Ferrandez-edited.jpg"
-output = "public/media/original/1e2e67772ff9.jpg"
+output = "docs/auditoria/media-original/1e2e67772ff9.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/alexandra-bellisimo-3.jpg"
-output = "public/media/original/56bd5bc4bae4.jpg"
+output = "docs/auditoria/media-original/56bd5bc4bae4.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/eugenia-loli-1.jpg"
-output = "public/media/original/77eec48d8377.jpg"
+output = "docs/auditoria/media-original/77eec48d8377.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/judith-supine-816x1024.jpg"
-output = "public/media/original/63a06a17b7cc.jpg"
+output = "docs/auditoria/media-original/63a06a17b7cc.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/vivian-pantoja-2-1.jpg"
-output = "public/media/original/cf4405529f20.jpg"
+output = "docs/auditoria/media-original/cf4405529f20.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/A_MaryWigman-681x1024.jpg"
-output = "public/media/original/ffc4769437a0.jpg"
+output = "docs/auditoria/media-original/ffc4769437a0.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/ISADORA-DUNCAN-1024x664.jpg"
-output = "public/media/original/7ebe96835863.jpg"
+output = "docs/auditoria/media-original/7ebe96835863.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Katherine-Dunham-798x1024.jpg"
-output = "public/media/original/c93eb00aa744.jpg"
+output = "docs/auditoria/media-original/c93eb00aa744.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Martha-Graham.jpg"
-output = "public/media/original/63debf797b90.jpg"
+output = "docs/auditoria/media-original/63debf797b90.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Pina-Bausch-Cafe-Muller-1024x512.jpg"
-output = "public/media/original/6f7aa0f95f03.jpg"
+output = "docs/auditoria/media-original/6f7aa0f95f03.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/artemisa-2-1024x869.jpg"
-output = "public/media/original/b0783884d8ff.jpg"
+output = "docs/auditoria/media-original/b0783884d8ff.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Eleonora-5-1024x661.jpg"
-output = "public/media/original/4935fcab453c.jpg"
+output = "docs/auditoria/media-original/4935fcab453c.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Frida-1-1024x924.jpg"
-output = "public/media/original/1c8284ce9c13.jpg"
+output = "docs/auditoria/media-original/1c8284ce9c13.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/grace-3-1024x770.jpg"
-output = "public/media/original/ebd9e5d0d8f0.jpg"
+output = "docs/auditoria/media-original/ebd9e5d0d8f0.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/rachel-baes.jpg"
-output = "public/media/original/58f46b9c7c11.jpg"
+output = "docs/auditoria/media-original/58f46b9c7c11.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/adriana-rondon-1024x1024.jpg"
-output = "public/media/original/c5401c814348.jpg"
+output = "docs/auditoria/media-original/c5401c814348.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/david-cata.jpg"
-output = "public/media/original/73d74522cf05.jpg"
+output = "docs/auditoria/media-original/73d74522cf05.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/HINKE-SCHREUDERS-1.jpg"
-output = "public/media/original/a14895418d56.jpg"
+output = "docs/auditoria/media-original/a14895418d56.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Louis-Bourgeois-3-1024x683.jpg"
-output = "public/media/original/d16b8aa31291.jpg"
+output = "docs/auditoria/media-original/d16b8aa31291.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/tejedoras-memoria-sonson.jpg"
-output = "public/media/original/ce20929a0eed.jpg"
+output = "docs/auditoria/media-original/ce20929a0eed.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/tracey-emin-2-1024x811.jpg"
-output = "public/media/original/0c7ef3264a49.jpg"
+output = "docs/auditoria/media-original/0c7ef3264a49.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/concha-1024x681.jpg"
-output = "public/media/original/a488645dcf44.jpg"
+output = "docs/auditoria/media-original/a488645dcf44.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Eija-3-1024x682.jpg"
-output = "public/media/original/14c575d1b9e8.jpg"
+output = "docs/auditoria/media-original/14c575d1b9e8.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/joan-jonas-3-1024x683.jpg"
-output = "public/media/original/1eb780eef2f8.jpg"
+output = "docs/auditoria/media-original/1eb780eef2f8.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/marina-2-1024x768.jpg"
-output = "public/media/original/1794c378245f.jpg"
+output = "docs/auditoria/media-original/1794c378245f.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/angele-5.jpg"
-output = "public/media/original/aee2d9cf2e45.jpg"
+output = "docs/auditoria/media-original/aee2d9cf2e45.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/MARTINE-3-669x1024.jpg"
-output = "public/media/original/6db971288258.jpg"
+output = "docs/auditoria/media-original/6db971288258.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/NEWSHA-1024x824.jpg"
-output = "public/media/original/cc01b0210b1a.jpg"
+output = "docs/auditoria/media-original/cc01b0210b1a.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/zalene-8.jpg"
-output = "public/media/original/8ee9b84c0505.jpg"
+output = "docs/auditoria/media-original/8ee9b84c0505.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/ANDY-GOLDSWORTHY.jpg"
-output = "public/media/original/029cf47b6090.jpg"
+output = "docs/auditoria/media-original/029cf47b6090.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/louise-b-2-809x1024.jpg"
-output = "public/media/original/337de5f763f5.jpg"
+output = "docs/auditoria/media-original/337de5f763f5.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/niki-4-1024x836.jpg"
-output = "public/media/original/f84a4d9fad2b.jpg"
+output = "docs/auditoria/media-original/f84a4d9fad2b.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Ron_Mueck-1024x896.jpg"
-output = "public/media/original/3978ca70f7bb.jpg"
+output = "docs/auditoria/media-original/3978ca70f7bb.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Screenshot_2024-10-24-01-51-24-72_40deb401b9ffe8e1df2f1cc5ba480b12-1024x971.jpg"
-output = "public/media/original/6f2aac97ac6f.jpg"
+output = "docs/auditoria/media-original/6f2aac97ac6f.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Billie-Holidey-1024x576.jpg"
-output = "public/media/original/64dec9ea114c.jpg"
+output = "docs/auditoria/media-original/64dec9ea114c.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/james_rhodes.jpg"
-output = "public/media/original/0a275dc0741b.jpg"
+output = "docs/auditoria/media-original/0a275dc0741b.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Screenshot_2024-10-24-01-59-38-31_40deb401b9ffe8e1df2f1cc5ba480b12-1-1024x942.jpg"
-output = "public/media/original/c409dc4a03f4.jpg"
+output = "docs/auditoria/media-original/c409dc4a03f4.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/Nina-Simone-2-880x1024.jpg"
-output = "public/media/original/6f7c751dd755.jpg"
+output = "docs/auditoria/media-original/6f7c751dd755.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2024/10/liliana-felipe-2-1-1024x576.jpg"
-output = "public/media/original/8e6de986a255.jpg"
+output = "docs/auditoria/media-original/8e6de986a255.jpg"
 
 url = "https://laosapolar.es/wp-content/uploads/2025/02/IMG_20250213_133811-567x1024.jpg"
-output = "public/media/original/0e3760c2081e.jpg"
+output = "docs/auditoria/media-original/0e3760c2081e.jpg"

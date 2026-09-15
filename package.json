@@ -8,12 +8,11 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "audit": "node docs/auditoria/verificar-home.mjs && node docs/auditoria/verificar-migracion.mjs && node docs/auditoria/auditar-tecnico.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.2",
-    "astro": "^6.1.5",
-    "tailwindcss": "^4.2.2"
+    "astro": "^6.1.5"
   }
 }
