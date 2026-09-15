@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { site } from '../data/site';
+interface Props { title?: string; description?: string; noindex?: boolean; }
+const { title = 'La Osa Polar — Escuela de Arteterapia Gestalt y Salud', description = site.description, noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, site.url);
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <meta name="theme-color" content="#f8f7f2" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${site.url}/social.jpg`} />
+    <meta property="og:image:alt" content="Materiales de pintura en el taller de La Osa Polar" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <slot name="head" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#content">Saltar al contenido</a>
+    <SiteHeader />
+    <main id="content" tabindex="-1"><slot /></main>
+    <SiteFooter />
+  </body>
+</html>

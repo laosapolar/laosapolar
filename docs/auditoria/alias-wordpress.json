@@ -1,0 +1,212 @@
+[
+  {
+    "source": "/?page_id=39",
+    "destination": "/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=58",
+    "destination": "/arteterapia-esencial/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=60",
+    "destination": "/espacio-individual/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=73",
+    "destination": "/especializacion/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=76",
+    "destination": "/arteterapia-gestalt/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=78",
+    "destination": "/educacion-emocional-sanitaria/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=80",
+    "destination": "/ciclo-esencial-2024/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=84",
+    "destination": "/eventos/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=86",
+    "destination": "/monograficos/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=216",
+    "destination": "/nosotras/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=218",
+    "destination": "/la-osa-polar/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=220",
+    "destination": "/colaboraciones/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=381",
+    "destination": "/ejemplo-colaborador/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=430",
+    "destination": "/formacion-1/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=482",
+    "destination": "/informacion-postgrado/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=525",
+    "destination": "/galeria/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=588",
+    "destination": "/rocio/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=600",
+    "destination": "/catalina-llado/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=604",
+    "destination": "/consuelo-trujillo/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=608",
+    "destination": "/victor-orive/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=612",
+    "destination": "/alain-vigneau/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=616",
+    "destination": "/victor-rios/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=620",
+    "destination": "/antonio-castillo/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=624",
+    "destination": "/lolique-llorente/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=629",
+    "destination": "/amos-vasquez/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=633",
+    "destination": "/raquel-jimenez/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=637",
+    "destination": "/ana/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=643",
+    "destination": "/jorge-gregorio/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=647",
+    "destination": "/amaia-roldan/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=651",
+    "destination": "/oscar-velado/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=655",
+    "destination": "/marisol-molina/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=659",
+    "destination": "/inaki-zapirain/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=663",
+    "destination": "/montse-perez/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=667",
+    "destination": "/elena-curiel/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=671",
+    "destination": "/maria-silva/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=675",
+    "destination": "/guillermo-urbano/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=680",
+    "destination": "/magda-pineyro/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=684",
+    "destination": "/simon-castillo/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=688",
+    "destination": "/antonio-castillo-2/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=693",
+    "destination": "/elena-garcia/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=908",
+    "destination": "/artistas-vida-y-obras/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  },
+  {
+    "source": "/?page_id=1008",
+    "destination": "/alejandro-rodriguez/",
+    "verification": "ID observado en HTML; respuesta del alias no comprobada"
+  }
+]

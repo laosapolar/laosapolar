@@ -1,0 +1,6 @@
+---
+import EditorialPage from '../components/EditorialPage.astro';
+import pages from '../data/migrated-pages.json';
+const page = pages.find(page => page.slug === 'especializacion')!;
+---
+<EditorialPage {page} />

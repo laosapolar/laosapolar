@@ -1,0 +1,9 @@
+---
+import EditorialPage from '../components/EditorialPage.astro';
+import pages from '../data/migrated-pages.json';
+export function getStaticPaths() {
+  return pages.filter(page => !['inicio','especializacion','formacion-1','antonio-castillo'].includes(page.slug)).map(page => ({ params: { slug: page.slug }, props: { page } }));
+}
+const { page } = Astro.props;
+---
+<EditorialPage {page} />

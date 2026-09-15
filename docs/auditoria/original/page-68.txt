@@ -1,0 +1,3 @@
+Página no encontrada – La Osa Polar
+h1: ¡Vaya! No se puede encontrar esa página.
+p: Parece que no hay nada en esa ubicación ¿quieres probar a buscar?

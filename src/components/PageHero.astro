@@ -1,0 +1,17 @@
+---
+interface Props { title: string; eyebrow?: string; archive?: boolean; }
+const { title, eyebrow = 'La Osa Polar · Málaga', archive = false } = Astro.props;
+---
+<header class="page-hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">{archive ? 'Archivo' : eyebrow}</p>
+    <h1>{title}</h1>
+  </div>
+</header>
+<style>
+  .page-hero { border-bottom: 1px solid var(--line); background: var(--paper); }
+  .hero-inner { padding-block: clamp(3.5rem, 8vw, 7.5rem); }
+  .eyebrow { color: var(--accent); margin-bottom: var(--space-5); }
+  h1 { max-width: 16ch; font: 400 clamp(3rem, 7vw, 6rem)/1.04 var(--font-hand); color: var(--accent-dark); text-wrap: balance; }
+  @media (max-width: 520px) { .hero-inner { padding-block: var(--space-7); } h1 { font-size: clamp(2.8rem, 14vw, 4.25rem); } }
+</style>

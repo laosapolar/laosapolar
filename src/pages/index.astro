@@ -1,17 +1,187 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import IllustratedLink from '../components/IllustratedLink.astro';
+import MailForm from '../components/MailForm.astro';
+import Arrow from '../components/Arrow.astro';
+import { site, originalPage } from '../data/site';
+import cover from '../assets/home/cropped-12-scaled-2-scaled.jpg';
+import brushes from '../assets/home/Principal-o-fondos-web-3.jpg';
+import nosotras from '../assets/home/IMG_20231025_001803.jpg';
+import osa from '../assets/home/IMG_20231023_173158.jpg';
+import equipo from '../assets/home/IMG_20231023_172917.jpg';
+import arte from '../assets/home/IMG_20241010_022320.jpg';
+import formacion from '../assets/home/IMG_20231025_003411.jpg';
+import ciclo from '../assets/home/IMG_20231025_003537.jpg';
+import individual from '../assets/home/IMG_20231025_003727.jpg';
+import teatro from '../assets/home/IMG_20231025_003923.jpg';
+import gallery from '../assets/home/30-1024x681.jpg';
+import artists from '../assets/home/10-1024x681.jpg';
+const school = [
+  { image: nosotras, label: 'Nosotras', href: originalPage('/nosotras/') },
+  { image: osa, label: 'La Osa Polar', href: originalPage('/la-osa-polar/') },
+  { image: equipo, label: 'Equipo y colaboraciones', href: originalPage('/colaboraciones/') },
+  { image: arte, label: 'Arteterapia', href: originalPage('/arteterapia-gestalt/') },
+];
+const proposals = [
+  { image: formacion, label: 'Formación en Arteterapia Gestalt', href: originalPage('/arteterapia-gestalt/') },
+  { image: ciclo, label: 'Ciclo Esencial de Arteterapia', href: originalPage('/arteterapia-esencial/') },
+  { image: individual, label: 'Acompañamiento individual', href: originalPage('/espacio-individual/') },
+  { image: teatro, label: 'Teatro y corporal', href: originalPage('/especializacion/'), note: 'Postgrado · edición 2024–2025' },
+];
 ---
+<Layout>
+  <link slot="head" rel="preload" href="/fonts/yesteryear-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <section class="home-cover" aria-labelledby="home-title">
+    <div class="cover-copy">
+      <p class="eyebrow">Málaga · Andalucía</p>
+      <h1 id="home-title">Arteterapia<br /><span>Gestalt y Salud</span></h1>
+      <p class="cover-description">Escuela de Arteterapia<br />Gestalt y Salud</p>
+      <a class="text-link" href="#nosotras"><span>Conoce La Osa Polar</span><Arrow /></a>
+    </div>
+    <div class="cover-photo"><Image src={cover} alt="Pinturas y materiales artísticos sobre una silla en el taller de La Osa Polar" widths={[480, 800, 1200, 1600]} sizes="(max-width: 700px) 100vw, 55vw" loading="eager" fetchpriority="high" /></div>
+  </section>
+
+  <section class="school-section section" id="nosotras" aria-labelledby="school-title">
+    <div class="container">
+      <div class="school-intro">
+        <div><p class="eyebrow">La escuela</p><h2 id="school-title">Un espacio para conocerse<br />a través del arte.</h2></div>
+        <p>La Osa Polar nace con el deseo de crear en Málaga un espacio para conocerse a través del arte, porque el arte es algo genuino, intrínseco a todas y cada una de nosotras.</p>
+      </div>
+      <div class="school-grid">{school.map(item => <IllustratedLink {...item} />)}</div>
+      <p class="credit">Ilustraciones de <a href="https://www.pinceladasconscientes.com/">Pinceladas Conscientes</a></p>
+    </div>
+  </section>
+
+  <section class="relationship-quote" aria-label="Una mirada sobre la relación">
+    <div class="container quote-inner">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <figure><blockquote>Nacemos en relación,<br />somos herid@s en relación,<br /><em>y podemos sanar en relación.</em></blockquote><figcaption>Harville Hendrix</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="proposals-section section" id="propuestas" aria-labelledby="proposals-title">
+    <div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Caminos compartidos</p><h2 id="proposals-title">Nuestras propuestas</h2></div></div>
+      <div class="proposals-grid">{proposals.map(item => <IllustratedLink {...item} variant="proposal" />)}</div>
+      <p class="credit">Ilustraciones de <a href="https://www.instagram.com/julietta.morla/">Julietta Morla</a></p>
+    </div>
+  </section>
+
+  <section class="subscribe-section section" id="suscribete" aria-labelledby="subscribe-title">
+    <div class="container subscribe-inner">
+      <div class="subscribe-copy"><p class="eyebrow">Seguimos en contacto</p><h2 id="subscribe-title">Suscríbete</h2><p>Noticias, talleres y novedades<br class="desktop-break" /> de La Osa Polar.</p><p class="subscribe-note">Solicita la suscripción por correo.</p></div>
+      <MailForm kind="newsletter" />
+    </div>
+  </section>
+
+  <section class="art-section section" id="galeria" aria-labelledby="art-title">
+    <div class="container">
+      <figure class="art-quote"><blockquote>El arte no es lo que se ve,<br /><span>el arte es la brecha.</span></blockquote><figcaption>M. Duchamp</figcaption></figure>
+      <h2 id="art-title" class="sr-only">Galería y artistas</h2>
+      <div class="art-grid">
+        <a class="art-link" href={originalPage('/galeria/')}>
+          <Image src={gallery} alt="Dos mujeres sostienen máscaras blancas delante de sus rostros" widths={[480, 720, 1024]} sizes="(max-width: 700px) 90vw, 44vw" loading="lazy" />
+          <div><h3>Galería</h3><Arrow /></div>
+        </a>
+        <a class="art-link" href={originalPage('/artistas-vida-y-obras/')}>
+          <Image src={artists} alt="Telas, pinturas y materiales para la creación artística en La Osa Polar" widths={[480, 720, 1024]} sizes="(max-width: 700px) 90vw, 44vw" loading="lazy" />
+          <div><h3>Artistas, vida y obras</h3><Arrow /></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section section" id="contacto" aria-labelledby="contact-title">
+    <div class="container contact-inner">
+      <div class="contact-copy">
+        <p class="eyebrow">La Osa Polar · Málaga</p><h2 id="contact-title">Contáctanos</h2>
+        <a class="contact-email" href={`mailto:${site.email}`}>{site.email}</a>
+        <a class="contact-phone" href={site.phoneHref}>{site.phone}</a>
+        <Image src={brushes} alt="Pinceles con restos de pintura de distintos colores" widths={[400, 640, 900]} sizes="(max-width: 760px) 90vw, 35vw" loading="lazy" />
+      </div>
+      <MailForm />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .home-cover { display: grid; grid-template-columns: 1fr 1.12fr; max-width: 1800px; margin-inline: auto; }
+  .cover-copy { padding: clamp(3rem, 6vw, 6rem) var(--gutter); align-self: center; }
+  .cover-copy .eyebrow { color: var(--accent); margin-bottom: var(--space-6); }
+  h1 { font: 400 clamp(3.5rem, 6.8vw, 6.5rem)/1.1 var(--font-hand); letter-spacing: -.01em; margin: 0 0 var(--space-6); color: var(--accent-dark); }
+  h1 span { white-space: nowrap; }
+  .cover-description { font-size: 1rem; line-height: 1.65; margin-bottom: var(--space-6); }
+  .cover-photo { height: clamp(560px, 48vw, 700px); min-width: 0; }
+  .cover-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 52% center; }
+  .school-intro { display: grid; grid-template-columns: 1.2fr 1fr; gap: var(--space-8); align-items: end; margin-bottom: var(--space-7); }
+  .eyebrow { margin-bottom: var(--space-4); color: var(--accent); }
+  .school-intro h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
+  .school-intro > p { color: var(--muted); max-width: 47ch; }
+  .school-grid, .proposals-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-6); }
+  .credit { margin-top: var(--space-6); }
+  .school-section .credit, .proposals-section .credit { text-align: right; }
+  .relationship-quote { background: var(--accent-dark); color: var(--white); padding-block: clamp(3.5rem, 6vw, 5rem); }
+  .quote-inner { display: flex; justify-content: center; gap: var(--space-6); }
+  .quote-mark { font: 7rem/.9 var(--font-quote); color: #9cc8b8; }
+  .relationship-quote blockquote { font: 400 clamp(1.6rem, 3vw, 2.6rem)/1.45 var(--font-quote); }
+  .relationship-quote em { font-weight: 400; }
+  figcaption { margin-top: var(--space-5); font-size: var(--text-small); }
+  .relationship-quote figcaption { color: #d5e6dc; }
+  .proposals-section { background: var(--white); }
+  .section-heading { margin-bottom: var(--space-7); }
+  .proposals-grid { gap: var(--space-7); }
+  .subscribe-section { background: var(--wash); }
+  .subscribe-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(3rem, 8vw, 8rem); max-width: 1080px; }
+  .subscribe-copy h2 { font: 400 clamp(3.4rem, 6vw, 5rem)/1.2 var(--font-hand); color: var(--accent-dark); margin-bottom: var(--space-5); }
+  .subscribe-copy > p:not(.eyebrow) { color: var(--muted); }
+  .subscribe-copy .subscribe-note { margin-top: var(--space-5); font-size: var(--text-small); }
+  .art-quote { text-align: center; margin-bottom: var(--space-8); }
+  .art-quote blockquote { font: 400 clamp(2.1rem, 4.5vw, 3.6rem)/1.3 var(--font-hand); color: var(--ink); }
+  .art-quote blockquote span { color: var(--accent); }
+  .art-quote figcaption { color: var(--muted); }
+  .art-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+  .art-link { text-decoration: none; min-width: 0; }
+  .art-link img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .art-link > div { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); padding-block: var(--space-5); border-bottom: 1px solid var(--line); }
+  .art-link:hover h3 { text-decoration: underline; text-underline-offset: .25em; }
+  .art-link :global(svg) { flex-shrink: 0; }
+  .contact-section { border-top: 1px solid var(--line); }
+  .contact-inner { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(3rem, 8vw, 8rem); max-width: 1080px; }
+  .contact-copy h2 { margin-bottom: var(--space-5); }
+  .contact-email, .contact-phone { display: block; width: fit-content; min-height: 44px; font-size: 1rem; overflow-wrap: anywhere; }
+  .contact-copy img { margin-top: var(--space-5); width: 100%; height: 200px; object-fit: cover; object-position: center 40%; }
+  @media (min-width: 1800px) { .cover-copy { padding-left: var(--space-9); } }
+  @media (max-width: 1000px) {
+    .home-cover { grid-template-columns: 1fr 1fr; }
+    .cover-photo { height: 470px; }
+    h1 { font-size: clamp(3.4rem, 6.6vw, 4.5rem); }
+    .school-intro { gap: var(--space-6); }
+    .school-grid, .proposals-grid { grid-template-columns: 1fr 1fr; gap: var(--space-7) var(--space-6); }
+  }
+  @media (max-width: 760px) {
+    .school-intro { grid-template-columns: 1fr; gap: var(--space-5); }
+    .subscribe-inner, .contact-inner { grid-template-columns: 1fr; gap: var(--space-6); }
+    .subscribe-copy .subscribe-note { margin-top: var(--space-3); }
+    .contact-copy img { display: none; }
+    .desktop-break { display: none; }
+  }
+  @media (max-width: 700px) {
+    .home-cover { grid-template-columns: 1fr; }
+    .cover-copy { padding: var(--space-7) var(--gutter) var(--space-6); }
+    .cover-copy .eyebrow { margin-bottom: var(--space-5); }
+    h1 { font-size: clamp(3.4rem, 10vw, 4.5rem); margin-bottom: var(--space-5); }
+    .cover-description { margin-bottom: var(--space-4); }
+    .cover-photo { min-height: 0; height: clamp(250px, 65vw, 390px); }
+    .cover-photo img { object-position: center 40%; }
+    .art-grid { grid-template-columns: 1fr; gap: var(--space-6); }
+    .quote-inner { gap: var(--space-3); }
+    .quote-mark { font-size: 4rem; }
+    .relationship-quote blockquote { font-size: clamp(1.2rem, 4.6vw, 1.8rem); }
+    .school-section .credit, .proposals-section .credit { text-align: left; }
+    .proposals-grid { gap: var(--space-6) var(--space-5); }
+  }
+  @media (max-width: 480px) { .proposals-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 380px) { h1 { font-size: 3rem; } .school-grid { gap: var(--space-6) var(--space-4); } }
+</style>

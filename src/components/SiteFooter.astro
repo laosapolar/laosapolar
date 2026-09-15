@@ -1,0 +1,38 @@
+---
+import Brand from './Brand.astro';
+import { site, originalPage } from '../data/site';
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-identity"><Brand /><p>Escuela de Arteterapia<br />Gestalt y Salud</p><p>Málaga, Andalucía</p></div>
+      <div><h2>La escuela</h2><ul>
+        <li><a href={originalPage('/nosotras/')}>Nosotras</a></li>
+        <li><a href={originalPage('/la-osa-polar/')}>La Osa Polar</a></li>
+        <li><a href={originalPage('/colaboraciones/')}>Equipo y colaboraciones</a></li>
+        <li><a href={originalPage('/galeria/')}>Galería</a></li>
+        <li><a href="/buscar/">Buscar</a></li>
+        <li><a href="/">Inicio</a></li>
+      </ul></div>
+      <div class="footer-contact"><h2>Encuéntranos</h2><p>Málaga, España</p><a href={`mailto:${site.email}`}>{site.email}</a><a href={site.phoneHref}>{site.phone}</a><a href="/#contacto">Escríbenos</a></div>
+    </div>
+    <div class="footer-bottom"><p>© {new Date().getFullYear()} La Osa Polar</p><a href="#top">Volver arriba <span aria-hidden="true">↑</span></a></div>
+  </div>
+</footer>
+<style>
+  .site-footer { background: var(--accent-dark); color: var(--white); padding-block: var(--space-8) var(--space-5); }
+  .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1.3fr; gap: var(--space-7); padding-bottom: var(--space-8); }
+  .footer-identity p { margin-top: var(--space-4); font-size: .9375rem; color: #d4e2db; }
+  h2 { font: 500 .9375rem/1.5 var(--font-body); letter-spacing: 0; margin: var(--space-3) 0 var(--space-5); }
+  ul { list-style: none; padding: 0; }
+  a { font-size: .9375rem; text-decoration: none; }
+  li a, .footer-contact > a { display: block; width: fit-content; padding-block: .45rem; overflow-wrap: anywhere; }
+  a:hover { color: var(--white); text-decoration: underline; }
+  a:focus-visible { outline-color: var(--white); }
+  .footer-contact p { font-size: .9375rem; margin-bottom: var(--space-3); }
+  .footer-bottom { border-top: 1px solid #ffffff38; padding-top: var(--space-5); display: flex; justify-content: space-between; gap: var(--space-5); font-size: var(--text-small); }
+  .footer-bottom a { display: inline-flex; gap: var(--space-4); align-items: center; min-height: 44px; }
+  .footer-bottom p { align-self: center; }
+  @media (max-width: 850px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-identity { grid-column: 1 / -1; } }
+  @media (max-width: 520px) { .footer-grid { grid-template-columns: 1fr; gap: var(--space-6); } .footer-bottom { flex-wrap: wrap; } }
+</style>

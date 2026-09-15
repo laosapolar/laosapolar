@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/home/logoFull.png';
+---
+<a class="brand" href="/" aria-label="La Osa Polar — Inicio">
+  <Image src={logo} alt="" widths={[270, 540]} sizes="270px" class="brand-mark" loading="eager" />
+  <span>La Osa Polar</span>
+</a>
+<style>
+  .brand { display: inline-flex; align-items: center; gap: .65rem; text-decoration: none; flex-shrink: 0; }
+  .brand-mark { width: 54px; height: 54px; object-fit: cover; object-position: left; }
+  .brand span { font-size: 1.2rem; font-weight: 700; letter-spacing: .015em; text-transform: uppercase; white-space: nowrap; }
+  @media (max-width: 600px) { .brand-mark { width: 44px; height: 44px; } .brand span { font-size: 1rem; } }
+</style>

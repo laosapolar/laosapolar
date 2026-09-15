@@ -1,0 +1,5 @@
+Formación #1 – La Osa Polar
+p: Aquí va el texto de la formación. Si queréis añadir una galería, simplemente presionar el botón de «+» arriba a la izquierda y buscad «galería».
+h2: Ponentes
+h2: Nombre Apellido
+h2: Nombre Apellido

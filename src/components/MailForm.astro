@@ -1,0 +1,58 @@
+---
+import Arrow from './Arrow.astro';
+import { site } from '../data/site';
+interface Props { kind?: 'contact' | 'newsletter'; }
+const { kind = 'contact' } = Astro.props;
+const newsletter = kind === 'newsletter';
+---
+<form class="mail-form" action={`mailto:${site.email}`} method="post" enctype="text/plain" data-mail-form data-kind={kind} data-recipient={site.email} aria-describedby={`${kind}-help`}>
+  <div class:list={['name-fields', { 'two-fields': newsletter }]}>
+    <div class="field"><label for={`${kind}-name`}>Nombre <span aria-hidden="true">*</span></label><input id={`${kind}-name`} name="nombre" autocomplete={newsletter ? 'given-name' : 'name'} required maxlength="100" /></div>
+    {newsletter && <div class="field"><label for="newsletter-surname">Apellidos <span aria-hidden="true">*</span></label><input id="newsletter-surname" name="apellidos" autocomplete="family-name" required maxlength="150" /></div>}
+  </div>
+  <div class="field"><label for={`${kind}-email`}>Correo electrónico <span aria-hidden="true">*</span></label><input id={`${kind}-email`} name="correo" type="email" autocomplete="email" required maxlength="254" /></div>
+  {!newsletter && <div class="field"><label for="contact-message">Comentario o mensaje <span aria-hidden="true">*</span></label><textarea id="contact-message" name="mensaje" rows="4" required maxlength="2500"></textarea></div>}
+  <p id={`${kind}-help`} class="form-help">{newsletter ? 'Prepararemos una solicitud de suscripción en tu aplicación de correo. Podrás revisarla y enviarla desde allí.' : 'Abriremos tu aplicación de correo con el mensaje preparado. Podrás revisarlo y enviarlo desde allí.'} Los campos con * son obligatorios.</p>
+  <div class="form-actions"><button class="button" type="submit">Preparar correo <Arrow /></button></div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+  <noscript><p class="form-help">También puedes escribir directamente a <a href={`mailto:${site.email}`}>{site.email}</a>.</p></noscript>
+</form>
+<style>
+  .mail-form { display: grid; gap: var(--space-5); min-width: 0; }
+  .name-fields { display: grid; gap: var(--space-5); }
+  .two-fields { grid-template-columns: 1fr 1fr; }
+  .field { min-width: 0; }
+  label { display: block; font-size: var(--text-small); font-weight: 500; margin-bottom: var(--space-2); }
+  label span { color: var(--accent); }
+  input, textarea { display: block; width: 100%; min-width: 0; border: 1px solid #909e95; border-radius: 0; background: var(--white); color: var(--ink); padding: .65rem .85rem; font-size: 1rem; line-height: 1.6; }
+  input { min-height: 48px; }
+  textarea { resize: vertical; min-height: 130px; }
+  input:focus-visible, textarea:focus-visible { outline-offset: 2px; }
+  .form-help, .form-status { font-size: var(--text-small); color: var(--muted); line-height: 1.6; }
+  .form-help a { overflow-wrap: anywhere; }
+  .form-status:empty { display: none; }
+  .form-status { border-left: 2px solid var(--accent); padding-left: var(--space-4); }
+  @media (max-width: 380px) { .two-fields { grid-template-columns: 1fr; } }
+</style>
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-mail-form]').forEach(form => {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const data = new FormData(form);
+      const value = (key: string) => String(data.get(key) || '').trim();
+      const newsletter = form.dataset.kind === 'newsletter';
+      const subject = newsletter ? 'Solicitud de suscripción — La Osa Polar' : 'Contacto — La Osa Polar';
+      const body = [
+        newsletter ? 'Hola, me gustaría solicitar la suscripción a las novedades de La Osa Polar.' : 'Hola, La Osa Polar:',
+        '',
+        `Nombre: ${value('nombre')}${newsletter ? ' ' + value('apellidos') : ''}`,
+        `Correo electrónico: ${value('correo')}`,
+        ...(!newsletter ? ['', value('mensaje')] : []),
+      ].join('\n');
+      window.location.href = `mailto:${form.dataset.recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const status = form.querySelector<HTMLElement>('[role="status"]');
+      if (status) status.textContent = `Si tu aplicación de correo no se abre, puedes escribir a ${form.dataset.recipient}. El mensaje todavía no se ha enviado.`;
+    });
+  });
+</script>

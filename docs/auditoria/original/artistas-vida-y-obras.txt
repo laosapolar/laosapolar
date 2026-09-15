@@ -1,0 +1,49 @@
+Artistas, vida y obras – La Osa Polar
+p: COLLAGE
+figcaption: Alexandra Bellísimo
+figcaption: Eugenia Loli
+figcaption: Judith Supine
+figcaption: Vivian Pantoja
+p: DANZA
+figcaption: MARY WIGMAN
+figcaption: ISADORA DUNCAN
+figcaption: KATHERINE DUNHAM
+figcaption: MARTHA GRAHAM
+figcaption: PINA BAUSCH
+p: PINTURA
+figcaption: ARTEMISA GENTILESCHI
+figcaption: LEONORA CARRINGTON
+figcaption: FRIDA KAHLO
+figcaption: GRACE PAILTHORPE
+figcaption: RACHEL BAES
+p: COSTURA
+figcaption: ADRIANA RONDÓN
+figcaption: DAVID CATÁ
+figcaption: HINKE SCHREUDERS
+figcaption: LOUISE BOURGEOIS
+figcaption: TEJIENDO PARA SANAR
+figcaption: TRACEY EMIN
+p: VIDEO – PERFORMANCE
+figcaption: CONCHA JEREZ
+figcaption: EIJA LIISA ATHILA
+figcaption: JOAN JONAS
+figcaption: MARINA ABRAMOVIC
+p: FOTOGRAFÍA
+figcaption: ANGELE ETOUNDI
+figcaption: MARTINE FRANCK
+figcaption: NEWSHA TAVAKOLIAN
+figcaption: ZANELE MUHOLI
+p: ESCULTURA
+figcaption: ANDY GOLDSWORTHY
+figcaption: LOUISE BOURGEOIS
+figcaption: NIKI DE SAINT P .
+figcaption: RON MUECK
+figcaption: ANTONIO HERNANDEZ
+p: MUSICA Y VOZ
+figcaption: BILLIE HOLIDAY
+figcaption: JAMES RHODES
+figcaption: BART SUNSHINE
+figcaption: NINA SIMONE
+figcaption: LILIANA FELIPE
+p: ESCRITURA EN CONSTRUCCION
+p: TEATRO EN CONSTRUCCION

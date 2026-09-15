@@ -1,0 +1,709 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MailForm from '../../components/MailForm.astro';
+import '../../styles/course-compat.css';
+
+const workshops = [
+  {
+    num: '01',
+    dates: '29 Nov – 1 Dic',
+    location: 'Residencial · Lobera de Gredos',
+    instructor: 'Víctor Orive',
+    schedule: 'Vie 17:30–21h · Sáb 10–20h · Dom 10–14h',
+    residential: true,
+  },
+  {
+    num: '02',
+    dates: '20–22 Dic',
+    location: 'Málaga',
+    instructor: 'Catalina Lladó',
+    schedule: 'Vie 17–21h · Sáb 10–20:30h · Dom 10–14h / 16–19h*',
+    residential: false,
+  },
+  {
+    num: '03',
+    dates: '24–26 Ene',
+    location: 'Málaga',
+    instructor: 'Consuelo Trujillo',
+    schedule: 'Vie 17–21h · Sáb 10–20:30h · Dom 10–14h / 16–19h*',
+    residential: false,
+  },
+  {
+    num: '04',
+    dates: '22–23 Feb',
+    location: 'Málaga',
+    instructor: 'Natalia Daimiel',
+    schedule: 'Sáb 10–20:30h · Dom 10–19h',
+    residential: false,
+  },
+  {
+    num: '05',
+    dates: '15–16 Mar',
+    location: 'Málaga',
+    instructor: 'Víctor Ríos',
+    schedule: 'Sáb 10–20:30h · Dom 10–19h',
+    residential: false,
+  },
+];
+
+const team = [
+  {
+    name: 'Consuelo Trujillo',
+    role: 'Actriz, creadora y directora de teatro',
+    quote: 'Donde está el peligro, crece también lo que salva.',
+    quoteAuthor: 'Hölderlin',
+    bio: 'Actriz y creadora. Maestra de actores y directora de teatro. Investigadora de procesos artísticos aplicados a la educación, psicoterapia y desarrollo humano. Directora del laboratorio Criatura del Arte. Discípula y colaboradora del Dr. Claudio Naranjo en el programa SAT desde 1998.',
+    img: '/media/original/a5646b5effb3.jpg',
+  },
+  {
+    name: 'Víctor Orive',
+    role: 'Danza, movimiento vivencial y terapia corporal',
+    quote: '',
+    quoteAuthor: '',
+    bio: 'Creador multifacético. Titulado en danza y pedagogía (Conservatorio de Madrid). Miembro fundador del Ballet de Víctor Ullate. Desarrolla procesos de autoconocimiento a través del diálogo entre el cuerpo y las artes. Director de Voarte y creador del método "Danza Vivencial".',
+    img: '/media/original/cd5b74bf9a45.jpg',
+  },
+  {
+    name: 'Catalina Lladó',
+    role: 'Pedagoga teatral, directora e investigadora',
+    quote: '',
+    quoteAuthor: '',
+    bio: 'Formación de diez años en Nueva York (H.B. Studio, Ernie Martin). Docente en el Studio JC Corazza y el Center del actor. Formación en danza Martha Graham. Actuación con Centre Dramatic de Catalunya, T. Lliure y Repertorio Español (Nueva York). Formación Gestalt (EMTG).',
+    img: '/media/original/34940f21f53d.jpg',
+  },
+  {
+    name: 'Víctor Ríos',
+    role: 'Terapeuta Gestalt y corporal · Teatro Mayéutico',
+    quote: '',
+    quoteAuthor: '',
+    bio: 'Terapeuta Gestalt y terapeuta corporal. Creador del Teatro Mayéutico y la Mayéutica Corporal. Especialista en técnicas psicodramáticas. Actor, director y dramaturgo.',
+    img: '/media/original/ebc19e90c8cf.jpg',
+  },
+  {
+    name: 'Natalia Daimiel',
+    role: 'Cofundadora La Osa Polar · Arteterapeuta Gestalt',
+    quote: '',
+    quoteAuthor: '',
+    bio: 'Cofundadora de La Osa Polar. Terapeuta Gestalt (AETG), arteterapeuta humanista. Trabajadora social humanista. Formada en Teatro Mayéutico y Mayéutica Corporal. Coimpulsora de la Escuela de Arteterapia Tierra de Alquimias (perspectiva de género, LGTBIQ).',
+    img: '/media/original/db2f565f4161.jpg',
+  },
+];
+return Astro.redirect('/especializacion/', 301);
+---
+<Layout
+  title="Postgrado Corporal-Teatro — La Osa Polar"
+  description="Postgrado en teatro y cuerpo como vías terapéuticas. 5 talleres intensivos. Málaga y Lobera de Gredos."
+>
+<div class="legacy-course">
+  <p class="archive-note">Archivo · Edición noviembre de 2024–marzo de 2025. Consulta próximas ediciones en <a href="mailto:elmardelaosapolar@gmail.com">elmardelaosapolar@gmail.com</a>.</p>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero pg-hero">
+    <div
+      class="hero-bg"
+      style="background-image: url('/media/original/06d0f27f66b8.jpg')"
+    ></div>
+    <div class="hero-overlay"></div>
+    <div class="pg-hero-content">
+      <p class="pg-breadcrumb fade-up delay-1">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true"> / </span>
+        <a href="/#propuestas">Formaciones</a>
+      </p>
+      <h1 class="pg-title fade-up delay-2">
+        <span>Postgrado</span>
+        <em>Corporal-Teatro</em>
+      </h1>
+      <p class="pg-tagline fade-up delay-3">Danzar la vida, Teatralizar la humanidad</p>
+    </div>
+  </section>
+
+  <!-- ░░ INTRO ░░ -->
+  <section class="pg-intro">
+    <div class="pg-intro-inner">
+      <div class="pg-intro-text reveal">
+        <header class="section-header">
+          <span class="section-label">El programa</span>
+          <div class="rule"></div>
+        </header>
+        <p class="pg-lead">
+          Un postgrado de especialización en teatro terapéutico y corporal dirigido a personas con experiencia terapéutica previa y a profesionales —psicólogos, terapeutas, artistas— que buscan profundizar en su desarrollo personal y ampliar sus herramientas de acompañamiento.
+        </p>
+        <p>
+          El trabajo integra la Gestalt, la psicoterapia integrativa, la arteterapia humanista, la mayéutica corporal, el teatro terapéutico, las artes escénicas, la danza experiencial y el movimiento auténtico. El cuerpo como cimiento milenario de sanación, el teatro integrado en la matriz gestáltica y en la tradición humanista.
+        </p>
+      </div>
+      <div class="pg-intro-badges reveal">
+        <div class="pg-badge">
+          <span class="pg-badge-num">5</span>
+          <span class="pg-badge-label">Talleres intensivos de fin de semana</span>
+        </div>
+        <div class="pg-badge pg-badge-accent">
+          <span class="pg-badge-num">1</span>
+          <span class="pg-badge-label">Taller residencial en contacto con la naturaleza</span>
+        </div>
+        <div class="pg-offerings">
+          <div class="pg-offering">
+            <span class="pg-offering-dot"></span>
+            <p>Profundización en el proceso terapéutico personal, movilizando aspectos del ego que requieren transformación.</p>
+          </div>
+          <div class="pg-offering">
+            <span class="pg-offering-dot"></span>
+            <p>Herramientas prácticas para enriquecer el acompañamiento terapéutico y despertar la creatividad en la práctica artística.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TEAM ░░ -->
+  <section class="pg-team">
+    <div class="pg-team-inner">
+      <header class="section-header reveal">
+        <span class="section-label">Equipo docente</span>
+        <div class="rule"></div>
+      </header>
+      <div class="pg-team-grid">
+        {team.map((person, i) => (
+          <article class={`pg-member reveal stagger-${(i % 4) + 1}`}>
+            <div class="pg-member-img" style={`background-image: url('${person.img}')`}></div>
+            <div class="pg-member-body">
+              <h3>{person.name}</h3>
+              <p class="pg-member-role">{person.role}</p>
+              {person.quote && (
+                <blockquote class="pg-member-quote">
+                  "{person.quote}"
+                  <cite>— {person.quoteAuthor}</cite>
+                </blockquote>
+              )}
+              <p class="pg-member-bio">{person.bio}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SCHEDULE ░░ -->
+  <section class="pg-schedule">
+    <div class="pg-schedule-inner">
+      <header class="section-header reveal">
+        <span class="section-label">Fechas y horarios</span>
+        <div class="rule"></div>
+      </header>
+      <div class="pg-workshops">
+        {workshops.map((w, i) => (
+          <div class={`pg-workshop reveal stagger-${(i % 4) + 1}`}>
+            <span class="pg-workshop-num">{w.num}</span>
+            <div class="pg-workshop-dates">
+              <strong>{w.dates}</strong>
+              {w.residential && <span class="pg-badge-pill">Residencial</span>}
+            </div>
+            <div class="pg-workshop-details">
+              <p class="pg-workshop-location">{w.location}</p>
+              <p class="pg-workshop-instructor">{w.instructor}</p>
+            </div>
+            <p class="pg-workshop-schedule">{w.schedule}</p>
+          </div>
+        ))}
+      </div>
+      <p class="pg-schedule-note reveal">* La tarde del domingo está sujeta a la disponibilidad de cada docente.</p>
+    </div>
+  </section>
+
+  <!-- ░░ PRICING ░░ -->
+  <section class="pg-pricing">
+    <div class="pg-pricing-inner">
+      <header class="section-header reveal">
+        <span class="section-label">Inversión</span>
+        <div class="rule"></div>
+      </header>
+      <div class="pg-pricing-grid reveal">
+        <div class="pg-price-card pg-price-main">
+          <p class="pg-price-label">Valor total de la formación</p>
+          <p class="pg-price-amount">1.000<span>€</span></p>
+          <p class="pg-price-note">Alojamiento residencial no incluido</p>
+        </div>
+        <div class="pg-price-options">
+          <div class="pg-price-option">
+            <div class="pg-price-option-head">
+              <span class="pg-price-option-tag">Pago único</span>
+              <strong>900€</strong>
+            </div>
+            <p>10% de descuento al abonar la formación completa en un único pago.</p>
+          </div>
+          <div class="pg-price-divider"></div>
+          <div class="pg-price-option">
+            <div class="pg-price-option-head">
+              <span class="pg-price-option-tag">Pago fraccionado</span>
+              <strong>200€ + cuotas</strong>
+            </div>
+            <p>200€ de señal (reembolsable al completar la formación) más 200€ al inicio de cada taller.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ REGISTRATION ░░ -->
+  <section class="pg-register">
+    <div class="pg-register-inner">
+      <div class="pg-register-text reveal">
+        <header class="section-header">
+          <span class="section-label" style="color:var(--warm-white)">Inscripción</span>
+          <div class="rule" style="background:rgba(253,250,243,0.12)"></div>
+        </header>
+        <h2>¿Te interesa<br /><em>este postgrado?</em></h2>
+        <p>El proceso de selección incluye una entrevista personal previa. Escríbenos o llámanos y te contamos todos los detalles.</p>
+        <div class="pg-contact-links">
+          <a href="mailto:elmardelaosapolar@gmail.com" class="pg-contact-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+            elmardelaosapolar@gmail.com
+          </a>
+          <a href="tel:+34645427764" class="pg-contact-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            645 427 764
+          </a>
+        </div>
+      </div>
+      <MailForm />
+    </div>
+  </section>
+
+</div>
+</Layout>
+
+<style is:global>
+/* ── HERO (shared base is in index.astro, pg-hero overrides height) ── */
+.pg-hero { height: 72vh; min-height: 500px; align-items: flex-end; }
+
+.pg-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--pad-x) clamp(3.5rem, 7vh, 6rem);
+}
+
+.pg-breadcrumb {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(253,250,243,0.45);
+  margin-bottom: 1.5rem;
+}
+.pg-breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+.pg-breadcrumb a:hover { color: var(--terra); }
+
+.pg-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 0.92;
+  margin-bottom: 1.25rem;
+}
+.pg-title span {
+  display: block;
+  font-size: clamp(2rem, 6vw, 5.5rem);
+  color: rgba(253,250,243,0.65);
+  letter-spacing: -0.01em;
+}
+.pg-title em {
+  display: block;
+  font-style: italic;
+  font-size: clamp(3rem, 8.5vw, 8rem);
+  color: var(--warm-white);
+}
+
+.pg-tagline {
+  font-family: var(--font-accent);
+  font-size: clamp(1.1rem, 3vw, 1.8rem);
+  color: var(--terra);
+  letter-spacing: 0.02em;
+}
+
+/* ── INTRO ── */
+.pg-intro {
+  padding: var(--pad-y) var(--pad-x);
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.pg-intro-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+@media (max-width: 900px) { .pg-intro-inner { grid-template-columns: 1fr; gap: 3rem; } }
+
+.pg-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 300;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+.pg-intro-text p:not(.pg-lead) {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.pg-badge {
+  background: var(--dark);
+  color: var(--warm-white);
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.65rem;
+}
+.pg-badge-accent { background: var(--terra); }
+.pg-badge-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.pg-badge-label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.pg-offerings { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.pg-offering {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+.pg-offering-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--terra);
+  flex-shrink: 0;
+  margin-top: 0.45rem;
+}
+.pg-offering p {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── TEAM ── */
+.pg-team {
+  background: var(--dark);
+  padding: var(--pad-y) var(--pad-x);
+}
+.pg-team-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.pg-team .section-label { color: var(--terra); }
+.pg-team .rule { background: rgba(253,250,243,0.1); }
+
+.pg-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2px;
+}
+
+.pg-member {
+  background: rgba(253,250,243,0.03);
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s;
+}
+.pg-member:hover { background: rgba(253,250,243,0.06); }
+
+.pg-member-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center top;
+  flex-shrink: 0;
+}
+
+.pg-member-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.pg-member-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--warm-white);
+  margin-bottom: 0.3rem;
+  line-height: 1.1;
+}
+.pg-member-role {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 1rem;
+}
+.pg-member-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(253,250,243,0.6);
+  border-left: 2px solid var(--terra);
+  padding-left: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.pg-member-quote cite {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-top: 0.4rem;
+}
+.pg-member-bio {
+  font-size: 0.8rem;
+  color: rgba(253,250,243,0.45);
+  line-height: 1.8;
+}
+
+/* ── SCHEDULE ── */
+.pg-schedule {
+  padding: var(--pad-y) var(--pad-x);
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.pg-workshops { display: flex; flex-direction: column; gap: 0; }
+
+.pg-workshop {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid rgba(26,23,20,0.08);
+}
+@media (max-width: 768px) {
+  .pg-workshop {
+    grid-template-columns: 2rem 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0.35rem 1rem;
+    padding: 1.25rem 0;
+  }
+  .pg-workshop-details { grid-column: 2; }
+  .pg-workshop-schedule { grid-column: 1 / -1; padding-left: 3rem; }
+}
+
+.pg-workshop-num {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(26,23,20,0.2);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.pg-workshop-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.pg-workshop-dates strong {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.pg-badge-pill {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terra);
+  border: 1px solid currentColor;
+  padding: 0.15rem 0.5rem;
+  width: fit-content;
+}
+.pg-workshop-location {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.pg-workshop-instructor {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--terra);
+}
+.pg-workshop-schedule {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.pg-schedule-note {
+  margin-top: 1.25rem;
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ── PRICING ── */
+.pg-pricing {
+  background: var(--sage-light);
+  padding: var(--pad-y) var(--pad-x);
+}
+.pg-pricing-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.pg-pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+@media (max-width: 768px) { .pg-pricing-grid { grid-template-columns: 1fr; } }
+
+.pg-price-card {
+  background: var(--dark);
+  color: var(--warm-white);
+  padding: 2.5rem;
+  text-align: center;
+}
+.pg-price-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(253,250,243,0.45);
+  margin-bottom: 1rem;
+}
+.pg-price-amount {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+.pg-price-amount span {
+  font-size: 0.45em;
+  vertical-align: super;
+  color: var(--terra);
+}
+.pg-price-note {
+  font-size: 0.7rem;
+  color: rgba(253,250,243,0.35);
+  font-style: italic;
+}
+
+.pg-price-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.pg-price-option {
+  padding: 1.75rem 0;
+}
+.pg-price-option-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+.pg-price-option-tag {
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+.pg-price-option-head strong {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.pg-price-option p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.pg-price-divider {
+  height: 1px;
+  background: rgba(26,23,20,0.1);
+}
+
+/* ── REGISTRATION ── */
+.pg-register {
+  background: var(--dark);
+  padding: var(--pad-y) var(--pad-x);
+}
+.pg-register-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+@media (max-width: 768px) { .pg-register-inner { grid-template-columns: 1fr; gap: 3rem; } }
+
+.pg-register-text h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--warm-white);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+.pg-register-text h2 em { font-style: italic; color: var(--terra); }
+.pg-register-text p {
+  font-size: 0.85rem;
+  color: rgba(253,250,243,0.5);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.pg-contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
+.pg-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: rgba(253,250,243,0.65);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.pg-contact-link:hover { color: var(--terra); }
+.pg-contact-link svg { flex-shrink: 0; opacity: 0.6; }
+
+.pg-form { display: flex; flex-direction: column; gap: 0.65rem; }
+.pg-form input,
+.pg-form textarea {
+  background: rgba(253,250,243,0.05);
+  border: 1px solid rgba(253,250,243,0.1);
+  color: var(--warm-white);
+}
+.pg-form input::placeholder,
+.pg-form textarea::placeholder { color: rgba(253,250,243,0.28); }
+.pg-form input:focus,
+.pg-form textarea:focus { border-color: var(--terra); }
+</style>

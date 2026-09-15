@@ -1,0 +1,38 @@
+url = "https://laosapolar.es/wp-content/uploads/2023/11/logoFull.png"
+output = "src/assets/home/logoFull.png"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/cropped-12-scaled-2-scaled.jpg"
+output = "src/assets/home/cropped-12-scaled-2-scaled.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2023/11/Principal-o-fondos-web-3.jpg"
+output = "src/assets/home/Principal-o-fondos-web-3.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_001803.jpg"
+output = "src/assets/home/IMG_20231025_001803.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231023_173158.jpg"
+output = "src/assets/home/IMG_20231023_173158.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231023_172917.jpg"
+output = "src/assets/home/IMG_20231023_172917.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20241010_022320.jpg"
+output = "src/assets/home/IMG_20241010_022320.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003411.jpg"
+output = "src/assets/home/IMG_20231025_003411.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003537.jpg"
+output = "src/assets/home/IMG_20231025_003537.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003727.jpg"
+output = "src/assets/home/IMG_20231025_003727.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/IMG_20231025_003923.jpg"
+output = "src/assets/home/IMG_20231025_003923.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/30-1024x681.jpg"
+output = "src/assets/home/30-1024x681.jpg"
+
+url = "https://laosapolar.es/wp-content/uploads/2024/10/10-1024x681.jpg"
+output = "src/assets/home/10-1024x681.jpg"

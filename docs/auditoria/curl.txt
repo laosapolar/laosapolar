@@ -1,0 +1,131 @@
+url = "https://laosapolar.es/arteterapia-esencial/"
+output = "docs/auditoria/original/arteterapia-esencial.html"
+
+url = "https://laosapolar.es/espacio-individual/"
+output = "docs/auditoria/original/espacio-individual.html"
+
+url = "https://laosapolar.es/especializacion/"
+output = "docs/auditoria/original/especializacion.html"
+
+url = "https://laosapolar.es/arteterapia-gestalt/"
+output = "docs/auditoria/original/arteterapia-gestalt.html"
+
+url = "https://laosapolar.es/educacion-emocional-sanitaria/"
+output = "docs/auditoria/original/educacion-emocional-sanitaria.html"
+
+url = "https://laosapolar.es/ciclo-esencial-2024/"
+output = "docs/auditoria/original/ciclo-esencial-2024.html"
+
+url = "https://laosapolar.es/eventos/"
+output = "docs/auditoria/original/eventos.html"
+
+url = "https://laosapolar.es/monograficos/"
+output = "docs/auditoria/original/monograficos.html"
+
+url = "https://laosapolar.es/nosotras/"
+output = "docs/auditoria/original/nosotras.html"
+
+url = "https://laosapolar.es/la-osa-polar/"
+output = "docs/auditoria/original/la-osa-polar.html"
+
+url = "https://laosapolar.es/colaboraciones/"
+output = "docs/auditoria/original/colaboraciones.html"
+
+url = "https://laosapolar.es/ejemplo-colaborador/"
+output = "docs/auditoria/original/ejemplo-colaborador.html"
+
+url = "https://laosapolar.es/formacion-1/"
+output = "docs/auditoria/original/formacion-1.html"
+
+url = "https://laosapolar.es/informacion-postgrado/"
+output = "docs/auditoria/original/informacion-postgrado.html"
+
+url = "https://laosapolar.es/galeria/"
+output = "docs/auditoria/original/galeria.html"
+
+url = "https://laosapolar.es/rocio/"
+output = "docs/auditoria/original/rocio.html"
+
+url = "https://laosapolar.es/catalina-llado/"
+output = "docs/auditoria/original/catalina-llado.html"
+
+url = "https://laosapolar.es/consuelo-trujillo/"
+output = "docs/auditoria/original/consuelo-trujillo.html"
+
+url = "https://laosapolar.es/victor-orive/"
+output = "docs/auditoria/original/victor-orive.html"
+
+url = "https://laosapolar.es/alain-vigneau/"
+output = "docs/auditoria/original/alain-vigneau.html"
+
+url = "https://laosapolar.es/victor-rios/"
+output = "docs/auditoria/original/victor-rios.html"
+
+url = "https://laosapolar.es/antonio-castillo/"
+output = "docs/auditoria/original/antonio-castillo.html"
+
+url = "https://laosapolar.es/lolique-llorente/"
+output = "docs/auditoria/original/lolique-llorente.html"
+
+url = "https://laosapolar.es/amos-vasquez/"
+output = "docs/auditoria/original/amos-vasquez.html"
+
+url = "https://laosapolar.es/raquel-jimenez/"
+output = "docs/auditoria/original/raquel-jimenez.html"
+
+url = "https://laosapolar.es/ana/"
+output = "docs/auditoria/original/ana.html"
+
+url = "https://laosapolar.es/jorge-gregorio/"
+output = "docs/auditoria/original/jorge-gregorio.html"
+
+url = "https://laosapolar.es/amaia-roldan/"
+output = "docs/auditoria/original/amaia-roldan.html"
+
+url = "https://laosapolar.es/oscar-velado/"
+output = "docs/auditoria/original/oscar-velado.html"
+
+url = "https://laosapolar.es/marisol-molina/"
+output = "docs/auditoria/original/marisol-molina.html"
+
+url = "https://laosapolar.es/inaki-zapirain/"
+output = "docs/auditoria/original/inaki-zapirain.html"
+
+url = "https://laosapolar.es/montse-perez/"
+output = "docs/auditoria/original/montse-perez.html"
+
+url = "https://laosapolar.es/elena-curiel/"
+output = "docs/auditoria/original/elena-curiel.html"
+
+url = "https://laosapolar.es/maria-silva/"
+output = "docs/auditoria/original/maria-silva.html"
+
+url = "https://laosapolar.es/guillermo-urbano/"
+output = "docs/auditoria/original/guillermo-urbano.html"
+
+url = "https://laosapolar.es/magda-pineyro/"
+output = "docs/auditoria/original/magda-pineyro.html"
+
+url = "https://laosapolar.es/simon-castillo/"
+output = "docs/auditoria/original/simon-castillo.html"
+
+url = "https://laosapolar.es/antonio-castillo-2/"
+output = "docs/auditoria/original/antonio-castillo-2.html"
+
+url = "https://laosapolar.es/elena-garcia/"
+output = "docs/auditoria/original/elena-garcia.html"
+
+url = "https://laosapolar.es/artistas-vida-y-obras/"
+output = "docs/auditoria/original/artistas-vida-y-obras.html"
+
+url = "https://laosapolar.es/alejandro-rodriguez/"
+output = "docs/auditoria/original/alejandro-rodriguez.html"
+
+url = "https://laosapolar.es/?page_id=68"
+output = "docs/auditoria/original/page-68.html"
+
+url = "https://laosapolar.es/?page_id=62"
+output = "docs/auditoria/original/page-62.html"
+
+url = "https://laosapolar.es/?page_id=82"
+output = "docs/auditoria/original/page-82.html"
