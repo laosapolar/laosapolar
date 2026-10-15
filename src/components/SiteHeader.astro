@@ -1,6 +1,7 @@
 ---
 import Brand from './Brand.astro';
-import { navigation } from '../data/site';
+import { getNavigation } from '../lib/navigation';
+const navigation = await getNavigation();
 ---
 <header class="site-header">
   <div class="header-inner container">
