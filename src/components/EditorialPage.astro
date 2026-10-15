@@ -2,19 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import PageHero from './PageHero.astro';
 import MailForm from './MailForm.astro';
-interface Props { page: { slug: string; title: string; description: string; html: string; imageCount: number }; }
-const { page } = Astro.props;
-const archive = ['especializacion','monograficos','informacion-postgrado','ciclo-esencial-2024'].includes(page.slug);
-const empty = ['eventos','educacion-emocional-sanitaria'].includes(page.slug);
-const contact = ['arteterapia-esencial','ciclo-esencial-2024','arteterapia-gestalt','espacio-individual','especializacion','monograficos','informacion-postgrado'].includes(page.slug);
+interface Props {
+  page: { slug: string; title: string; description: string; html: string; imageCount: number };
+  // Publicaciones de Sanity: estas opciones vienen del panel en lugar de la lista de slugs.
+  options?: { archive: boolean; contact: boolean; eyebrow?: string };
+}
+const { page, options } = Astro.props;
+const archive = options?.archive ?? ['especializacion','monograficos','informacion-postgrado','ciclo-esencial-2024'].includes(page.slug);
+const empty = !options && ['eventos','educacion-emocional-sanitaria'].includes(page.slug);
+const contact = options?.contact ?? ['arteterapia-esencial','ciclo-esencial-2024','arteterapia-gestalt','espacio-individual','especializacion','monograficos','informacion-postgrado'].includes(page.slug);
 const gallery = ['galeria','artistas-vida-y-obras','colaboraciones'].includes(page.slug);
-const profile = !gallery && page.imageCount <= 2 && !contact && !['nosotras','la-osa-polar'].includes(page.slug);
+const profile = options ? !contact : !gallery && page.imageCount <= 2 && !contact && !['nosotras','la-osa-polar'].includes(page.slug);
 const description = page.description || `${page.title}, La Osa Polar.`;
 const metadataTitle = archive ? `${page.title} — Archivo — La Osa Polar` : `${page.title} — La Osa Polar`;
 ---
 <Layout title={metadataTitle} {description} noindex={empty}>
   {archive && <div class="archive-banner"><div class="container">Convocatoria anterior conservada como archivo. Consulta la edición vigente o escríbenos para conocer próximas fechas.</div></div>}
-  <PageHero title={page.title} {archive} />
+  <PageHero title={page.title} eyebrow={options?.eyebrow} {archive} />
   <article class:list={['editorial section', { gallery, profile, empty }]}>
     <div class="container article-grid">
       <div class="original-content" set:html={page.html} />

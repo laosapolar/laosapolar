@@ -2,7 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
 import pages from '../data/migrated-pages.json';
-const index = pages.filter(page => !['inicio','eventos','formacion-1','antonio-castillo'].includes(page.slug)).map(({slug,title,description}) => ({slug,title,description}));
+import { getPublications } from '../lib/sanity';
+const index = [
+  ...(await getPublications()).map(({ href, title, summary }) => ({ href, title, description: summary ?? '' })),
+  ...pages.filter(page => !['inicio','eventos','formacion-1','antonio-castillo'].includes(page.slug)).map(({slug,title,description}) => ({href: `/${slug}/`,title,description})),
+];
 ---
 <Layout title="Buscar — La Osa Polar" description="Busca contenidos de La Osa Polar." noindex>
   <PageHero title="Buscar" />
@@ -29,7 +33,7 @@ const index = pages.filter(page => !['inicio','eventos','formacion-1','antonio-c
     const query = (input?.value || '').trim().toLocaleLowerCase('es');
     const matches = query ? data.filter((p: any) => `${p.title} ${p.description}`.toLocaleLowerCase('es').includes(query)) : [];
     if (summary) summary.textContent = query ? `${matches.length} resultado${matches.length === 1 ? '' : 's'} para “${input?.value.trim()}”.` : 'Escribe una palabra o un nombre para buscar.';
-    if (list) { list.replaceChildren(...matches.map((p: any) => { const li=document.createElement('li'),a=document.createElement('a'),desc=document.createElement('p'); a.href=`/${p.slug}/`;a.textContent=p.title;desc.textContent=p.description;li.append(a,desc);return li; })); }
+    if (list) { list.replaceChildren(...matches.map((p: any) => { const li=document.createElement('li'),a=document.createElement('a'),desc=document.createElement('p'); a.href=p.href;a.textContent=p.title;desc.textContent=p.description;li.append(a,desc);return li; })); }
     const url = new URL(location.href); query ? url.searchParams.set('s', input?.value.trim() || '') : url.searchParams.delete('s'); history.replaceState({},'',url);
   };
   form?.addEventListener('submit', e => { e.preventDefault(); render(); });

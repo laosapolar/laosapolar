@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
+import { getPublications, imageAttrs, type Publication } from '../../lib/sanity';
+import { sections } from '../../sanity/sections';
+// Listado por sección; solo se genera si la sección tiene alguna publicación.
+export async function getStaticPaths() {
+  const publications = await getPublications();
+  return sections
+    .map(section => ({ section, items: publications.filter(publication => publication.section === section.id) }))
+    .filter(({ items }) => items.length)
+    .map(({ section, items }) => ({ params: { seccion: section.id }, props: { title: section.title, items } }));
+}
+const { title, items } = Astro.props as { title: string; items: Publication[] };
+const groups = [
+  { heading: undefined, list: items.filter(item => !item.archive) },
+  { heading: 'Ediciones anteriores', list: items.filter(item => item.archive) },
+].filter(group => group.list.length);
+const formatDate = (date: string) => new Date(`${date}T12:00:00`).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Layout title={`${title} — La Osa Polar`} description={`Publicaciones de ${title}, La Osa Polar.`}>
+  <PageHero {title} eyebrow="Publicaciones" />
+  <section class="section"><div class="container">
+    {groups.map(group => <>
+      {group.heading && <h2 class="group-heading">{group.heading}</h2>}
+      <ul class="cards">
+        {group.list.map(item => {
+          const image = item.image?.asset ? imageAttrs(item.image, 960) : null;
+          return <li class="card">
+            {image && <img src={image.src} srcset={image.srcset} sizes="(max-width: 700px) calc(100vw - 2.5rem), (max-width: 1100px) 45vw, 380px" width={image.width} height={image.height} alt="" loading="lazy" decoding="async" />}
+            <p class="date"><time datetime={item.date}>{formatDate(item.date)}</time></p>
+            <h3><a href={item.href}>{item.title}</a></h3>
+            {item.summary && <p class="summary">{item.summary}</p>}
+          </li>;
+        })}
+      </ul>
+    </>)}
+  </div></section>
+</Layout>
+<style>
+  .cards { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-7) var(--space-6); }
+  .card { position: relative; border-top: 2px solid var(--accent); padding-top: var(--space-5); }
+  .card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin-bottom: var(--space-5); }
+  .card h3 a { text-decoration: none; }
+  .card h3 a::after { content: ''; position: absolute; inset: 0; }
+  .card:hover h3 a { color: var(--accent); }
+  .date { color: var(--muted); font-size: var(--text-small); margin-bottom: var(--space-2); }
+  .summary { margin-top: var(--space-3); color: var(--muted); }
+  .group-heading { margin: var(--space-8) 0 var(--space-6); font-size: clamp(1.5rem, 2.5vw, 2rem); }
+  @media (max-width: 1100px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 700px) { .cards { grid-template-columns: 1fr; } }
+</style>

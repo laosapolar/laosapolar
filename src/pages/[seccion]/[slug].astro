@@ -1,0 +1,18 @@
+---
+import EditorialPage from '../../components/EditorialPage.astro';
+import { countImages, getPublications, publicationHtml, type Publication } from '../../lib/sanity';
+import { sectionTitle } from '../../sanity/sections';
+export async function getStaticPaths() {
+  const publications = await getPublications();
+  return publications.map(publication => ({ params: { seccion: publication.section, slug: publication.slug }, props: { publication } }));
+}
+const { publication } = Astro.props as { publication: Publication };
+const page = {
+  slug: publication.slug,
+  title: publication.title,
+  description: publication.summary ?? '',
+  html: publicationHtml(publication),
+  imageCount: countImages(publication),
+};
+---
+<EditorialPage {page} options={{ archive: publication.archive, contact: publication.contactForm, eyebrow: sectionTitle(publication.section) }} />
